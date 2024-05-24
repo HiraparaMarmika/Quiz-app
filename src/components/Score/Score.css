@@ -1,0 +1,43 @@
+.Score-details {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+.scores {
+  color: white;
+  font-size: 18px;
+  font-weight: normal;
+}
+.score-btn button {
+  background-color: #6656ce;
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.score-btn {
+  margin: auto;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .Score-details {
+    font-size: 16px;
+  }
+
+  .score-btn button {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .Score-details {
+    font-size: 14px;
+  }
+
+  .score-btn button {
+    font-size: 14px;
+  }
+}

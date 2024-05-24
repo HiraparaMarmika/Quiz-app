@@ -1,0 +1,95 @@
+.quiz-box {
+  height: 400px;
+  width: 400px;
+  padding: 10px 40px 0 40px;
+  background-color: #6656ce;
+  margin: 50px auto;
+}
+.quiz-box h2 {
+  color: white;
+}
+.quiz-border {
+  border: 1px solid white;
+  border-radius: 4px;
+  padding: 20px;
+}
+.question {
+  display: flex;
+  gap: 5px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+.option-btn {
+  display: block;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 6px;
+  text-align: left;
+  width: 100%;
+  color: white;
+  background-color: #6656ce;
+  border: 1px solid white;
+  font-weight: bold;
+}
+.option-btn:hover {
+  background-color: #c65789;
+}
+.checked {
+  background-color: #c65789;
+  color: white;
+}
+.next-prev {
+  display: flex;
+  gap: 20px;
+}
+.start-quiz {
+  display: flex;
+  justify-content: space-between;
+}
+.start-quiz h3 {
+  cursor: pointer;
+  color: white;
+}
+.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+/* For screens smaller than 600px (e.g., smartphones) */
+@media only screen and (max-width: 600px) {
+  .quiz-box {
+    height: 90%;
+    width: 90%;
+    padding: 10px;
+  }
+  .quiz-border {
+    padding: 10px;
+  }
+  .question {
+    font-size: 14px;
+  }
+  .option-btn {
+    padding: 8px;
+    font-size: 14px;
+  }
+}
+
+/* For screens between 601px and 900px (e.g., tablets) */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  .quiz-box {
+    height: 80%;
+    width: 80%;
+    padding: 10px 20px 0 20px;
+  }
+  .quiz-border {
+    padding: 15px;
+  }
+}
+
+/* For screens larger than 900px (e.g., laptops and desktops) */
+@media only screen and (min-width: 901px) {
+  .quiz-box {
+    height: 400px;
+    width: 400px;
+  }
+}
